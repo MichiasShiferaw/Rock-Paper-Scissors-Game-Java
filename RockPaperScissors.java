@@ -11,4 +11,6 @@ public class RockPaperScissors {
       Scanner userInput = new Scanner(System.in);
       
       System.out.println("Choose rock(1), paper(2), or scissors(3) to play against the computer.");
+      System.out.println("Enter your move: ");
+      String userRandNum = userInput.nextLine();
 }
