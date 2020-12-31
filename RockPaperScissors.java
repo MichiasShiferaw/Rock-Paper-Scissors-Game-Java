@@ -15,4 +15,12 @@ public class RockPaperScissors {
       String userRandNum = userInput.nextLine();
       Random rndVal = new Random();
       int aiRandNum = rndVal.nextInt(3) + 1;
+      String rpsString = "";
+      if (aiRandNum == 1) {
+        rpsString = "rock";
+      } else if (aiRandNum == 2) {
+        rpsString = "paper";
+      } else if  (aiRandNum == 3) {
+        rpsString = "scissors";
+      }
 }
