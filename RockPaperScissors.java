@@ -23,4 +23,11 @@ public class RockPaperScissors {
       } else if  (aiRandNum == 3) {
         rpsString = "scissors";
       }
+      
+      String userInputString = userRandNum.toLowerCase(); 
+      
+      if ((userInputString.equals("rock")) || (userInputString.equals("paper")) 
+          || (userInputString.equals("scissor")) || (userInputString.equals("scissors"))) {
+      }  
+
 }
