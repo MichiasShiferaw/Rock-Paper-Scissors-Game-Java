@@ -28,6 +28,35 @@ public class RockPaperScissors {
       
       if ((userInputString.equals("rock")) || (userInputString.equals("paper")) 
           || (userInputString.equals("scissor")) || (userInputString.equals("scissors"))) {
+                //Convert the words of rps to numerical value
+        int userPlayer = 0; 
+        if (userInputString.equals("rock")) {
+          userPlayer = 1; 
+        } else if (userInputString.equals("paper")) {
+          userPlayer = 2; 
+        } else {
+          userPlayer = 3; 
+        }
+        
+                
+        if (userPlayer == aiRandNum) {
+          System.out.println(" You put a " + userInputString + " and the computer put " 
+              + rpsString);
+          System.out.println("Soo.. You tied");
+        } else if (aiRandNum == userPlayer + 1 || aiRandNum == userPlayer - 2) {
+          System.out.println("You put a " + userInputString + " and the computer put " + rpsString);
+          System.out.println("You lose!");
+        } else  {
+          System.out.println("You put a " + userInputString + " and the computer put " + rpsString);
+          System.out.println("You win!");
+        }
+      } else {
+        System.err.println("Sorry " + userInputString + " is not an option in RPS.");
+        System.err.println("Bye Bye!");
+        //Close the program as the value inputted is not qualified to continue through the program
+        System.exit(0);
+      }
+        
       }  
 
 }
