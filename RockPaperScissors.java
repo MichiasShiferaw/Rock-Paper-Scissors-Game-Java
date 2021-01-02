@@ -57,6 +57,18 @@ public class RockPaperScissors {
         System.exit(0);
       }
         
-      }  
+      //Ask the user if they want to replay
+      System.out.println("Play again? \"Yes\" or \"No\"");
+      Scanner redo = new Scanner(System.in);
 
+      String redoString = redo.next();
+      if (redoString.equals("Yes") || redoString.equals("yes")) {
+        replay = replay;
+      }
+      if (redoString.equals("No") || redoString.equals("no")) {
+        replay = !replay;
+        System.out.println("Bye Bye!");
+      }
+    }
+  }
 }
